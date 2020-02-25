@@ -55,7 +55,7 @@ p{
 
 /* Products CSS style  */
 .section_title{
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 .section_title h2{
     font-size: 26px;
@@ -75,6 +75,9 @@ p{
 .card img{
     padding: 30px;
 }
+.card h6{
+    margin-bottom: 20px;
+}
 
 /* categories CSS style  */
 .categories_area{
@@ -89,7 +92,7 @@ p{
     content: "";
     height: 7px;
     width: 110px;
-    background-image: linear-gradient(45deg, #FFB32F 0%, #FFD11F 100%);
+    background: linear-gradient(45deg, #FFB32F 0%, #FFD11F 100%);
     top: 40px;
     border-radius: 10px;
     margin: 0 auto;
@@ -100,7 +103,11 @@ p{
     background: #fff;
     box-shadow: 1px 1px 12px 0px #ddd;
     padding: 45px;
-
+    transition: all 1s ease;
+}
+.cat_img_bag:hover, .cat_img_perfume:hover, .cat_img_shoe:hover{
+    background: linear-gradient(45deg, #FFB32F 0%, #FFD11F 100%);
+    transition: all 1s ease;
 }
 
 .cat_img_bag{
@@ -150,6 +157,48 @@ p{
 }
 .input-group>.form-control:focus{
     box-shadow: none;
+}
+
+/* footer Widgets area CSS style  */
+.footer_wedgets_area{
+    padding: 50px;
+    background-color: #383838;
+}
+.single_widget h5{
+    color:  #fff;
+    position: relative;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+.single_widget h5::before{
+  position: absolute;
+    content: "";
+    height: 3px;
+    width: 50px;
+    background-image: linear-gradient(45deg, #FFB32F 0%, #FFD11F 100%);
+    top: 40px;
+    border-radius: 10px;
+    margin: 0 auto;
+    left: 50%;
+    margin-left: -25px; 
+}
+.single_widget ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.single_widget a{
+    text-decoration: none;
+    color: #999;
+    text-transform: capitalize;
+    line-height: 35px;
+    font-weight: 500;
+}
+.single_widget a:hover{
+    text-decoration: none;
+    color: #FFB32F;
+    text-transform: capitalize;
+    transition: all .3s ease;
 }
 
 /* Footer CSS style  */
